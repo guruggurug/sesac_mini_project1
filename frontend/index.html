@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-<title>하비DNA — 취미 발굴 AI</title>
+<title>취미로 — 취미 발굴 AI</title>
 <script src="/config.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet"/>
@@ -599,7 +599,7 @@ function renderSettings(){
     `<div class="avatar" style="width:52px;height:52px;font-size:20px">${av}</div>`+
     `<div><div class="h-md">${esc(me.name||"친구")}</div><div class="muted" style="font-size:13px">${esc(me.email||"")}</div></div></div>`+
     `<div class="sec-title"><span class="h-md">앱 정보</span></div>`+
-    `<div class="card"><p class="muted" style="margin:0;font-size:13.5px;line-height:1.7">하비DNA · 취미 발굴 MVP<br/>테마: Discovery Harmony (라이트)</p></div>`+
+    `<div class="card"><p class="muted" style="margin:0;font-size:13.5px;line-height:1.7">취미로 · 취미 발굴 MVP<br/>테마: Discovery Harmony (라이트)</p></div>`+
     `<button class="btn outline" style="margin-top:18px" onclick="logout()">로그아웃</button>`;
 }
 function logout(){ localStorage.removeItem("hobby_token"); token=""; sessionId=null; showLogin(); }

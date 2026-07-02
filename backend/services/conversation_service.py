@@ -14,7 +14,7 @@ from hobby_agents import HybridConversationAgent, SelfImprovingRanker
 from repositories.hobby_report_repository import HobbyReportRepository
 
 GREETING = (
-    "안녕하세요, 하비DNA예요. 오늘 당신의 마음을 진단해 딱 맞는 취미를 찾아드릴게요. "
+    "안녕하세요, 취미로예요. 오늘 당신의 마음을 진단해 딱 맞는 취미를 찾아드릴게요. "
     "요즘 마음이나 일상은 어떤가요? 편하게 한두 문장 들려주세요."
 )
 
