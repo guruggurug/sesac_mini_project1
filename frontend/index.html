@@ -391,6 +391,18 @@
 <div class="toast" id="toast"></div>
 
 <script>
+document.addEventListener('mousemove', (e) => {
+  const bgElements = document.querySelectorAll('.loading-glow-1, .loading-glow-2');
+  if (bgElements.length === 0) return;
+  const posX = (e.clientX / window.innerWidth - 0.5) * 20;
+  const posY = (e.clientY / window.innerHeight - 0.5) * 20;
+  bgElements.forEach((el, index) => {
+      const factor = (index + 1) * 0.5;
+      el.style.transform = `translate(${posX * factor}px, ${posY * factor}px)`;
+      el.style.transition = 'transform 2s cubic-bezier(0.1, 0, 0.1, 1)';
+  });
+});
+
 const API = window.HOBBY_API;
 let token = localStorage.getItem("hobby_token") || "";
 let me = {name:"친구", picture:""};
@@ -696,6 +708,7 @@ function loadingDiag(isFinal) {
           <!-- Message Branding -->
           <div class="loading-brand fade-in-up" style="animation-delay: 0.2s;">
             <h1 class="loading-title">취미는 천천히 발견하면 됩니다.</h1>
+            <p class="loading-desc">HobbyRo와 함께 당신만의 특별한 일상을 <br/>조금씩 그려나가 보세요.</p>
           </div>
           <!-- Loading Dots Indicator -->
           <div class="loading-dots fade-in-up" style="animation-delay: 0.4s;">
